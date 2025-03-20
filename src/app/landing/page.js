@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { ChevronDown, Paperclip, Send, ArrowRight } from "lucide-react";
+import { ChevronDown, Paperclip, ArrowRight } from "lucide-react";
 export default function LandingPage() {
     const [message, setMessage] = useState("");
     const [responseType, setResponseType] = useState("Default");
