@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { ChevronDown, Paperclip, Send } from "lucide-react";
+import { ChevronDown, Paperclip, Send, ArrowRight } from "lucide-react";
 export default function LandingPage() {
     const [message, setMessage] = useState("");
     const [responseType, setResponseType] = useState("Default");
@@ -70,8 +70,8 @@ export default function LandingPage() {
 
                         <div className="flex items-center gap-2">
                             <span className="text-xs text-muted-foreground">0/1000</span>
-                            <Button size="sm" className="rounded-full bg-black text-white hover:bg-gray-800">
-                                <Send className="h-4 w-4" />
+                            <Button size="sm" className="rounded-full bg-black text-white hover:bg-gray-800 h-8 w-8 p-0">
+                                <ArrowRight className="h-4 w-4" />
                             </Button>
                         </div>
                     </div>
